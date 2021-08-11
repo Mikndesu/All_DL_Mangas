@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "sample",
+    "version": "0.0.1",
+    "description": "All DL Manga Images on the site you're lookin at.",
+    "permissions": [
+      "background"
+    ],
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": [
+            "content.js"
+        ],
+        "css": ["content.css"]
+    }],
+    "background": [{
+        "js": [
+          "background.js"
+        ]
+      }]
+  }
